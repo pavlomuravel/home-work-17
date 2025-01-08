@@ -1,0 +1,84 @@
+@use"variables" as *;
+
+@media (max-width: 880px){
+    .header {
+        padding-inline: 2%;
+    }
+}
+
+@media (max-width: 830px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25px 60px 25px;
+        grid-template-areas:
+            "header__contakt"
+            "header__logo"
+            "header__nav";
+        padding-inline: 60px;      
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        row-gap: 30px;
+    }
+    .header__contakt{
+        justify-content: start;
+    }
+    .header__nav{
+        justify-content: start;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .header {
+        padding-inline: 2%;
+    }
+    .header__contak-facebook img{
+        display: none;
+    }
+    .dot {
+        
+        display: none;
+    }
+    .header__contak {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__contak {
+        gap: 0px;
+        justify-content: space-between;
+    }
+    .header__contak-adress {
+        display: none;
+    }
+    .dot {
+        display: none;
+    }
+    .header__contak-facebook {
+        display: none;
+    }
+   
+    .header__contak-phone {
+        margin-left: 108px;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header {
+        padding: 0;
+    }
+    .header__contakt {
+        background-color: $bg;
+        padding-block: 10px;
+        padding-inline: 15px;
+        border: 3px solid #000;
+    }
+}
+    
+
+

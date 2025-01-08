@@ -1,7 +1,6 @@
 @use"reset";
-
-h1 {
-    color: red;
-}
-
+@use"fonts" as *;
+@use"variables" as *;
+@use"header";
+@use"media";
 
