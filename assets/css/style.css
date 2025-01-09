@@ -61,6 +61,11 @@ table{
   font-weight:700;
   src:url("../fonts/Montserrat-Bold.ttf") format("truetype");
 }
+body{
+  min-width:237px;
+  overflow:hidden;
+}
+
 .header{
   padding-top:50px;
   padding-inline:60px;
@@ -149,6 +154,10 @@ table{
   display:-ms-flexbox;
   display:flex;
 }
+.header__contakt-language .language__hover a:hover{
+  background-color:#F5F5FA;
+  border-radius:8px;
+}
 .header__contakt-language .language a{
   padding-inline:7px;
   padding-block:5px;
@@ -159,10 +168,6 @@ table{
   font-size:12px;
   color:#B3B3BA;
   text-decoration:none;
-}
-.header__contakt-language .language a:hover{
-  background-color:#F5F5FA;
-  border-radius:8px;
 }
 .header__contakt-language .aktiv-lan a{
   background-color:#F0145A;
@@ -206,6 +211,12 @@ table{
       -ms-flex-pack:center;
           justify-content:center;
 }
+.header__contakt .header__contak-facebook svg path{
+  fill:#B3B3BA;
+}
+.header__contakt .header__contak-facebook:hover svg path{
+  fill:#F0145A;
+}
 .header__nav{
   white-space:nowrap;
   grid-area:header__nav;
@@ -231,7 +242,7 @@ table{
   text-decoration:none;
   padding-bottom:3px;
 }
-.header__nav-item .nav-item a:hover{
+.header__nav-item .nav__hover a:hover{
   border-bottom:2px solid #24A3FF;
 }
 .header__nav-item .nav-artiv a{
@@ -301,7 +312,7 @@ table{
     display:none;
     position:absolute;
   }
-  .header__contak-facebook{
+  .header__contak-facebook svg{
     display:none;
   }
   .header__contak-phone{
@@ -331,21 +342,20 @@ table{
   }
   .header__logo .header__logo-img{
     width:69.33px;
-    height:24.8px;
-    overflow:hidden;
+    height:32px;
   }
-  .header__logo .header__logo-img img{
-    width:69.33px;
-    height:24.8px;
+  .header__logo .header__logo-img svg{
+    width:100%;
+    height:100%;
   }
   .header__logo .header__logo-slash{
     width:11.62px;
     height:26px;
-    overflow:hidden;
+    margin-bottom:8px;
   }
-  .header__logo .header__logo-slash img{
-    width:11.62px;
-    height:26px;
+  .header__logo .header__logo-slash svg{
+    width:100%;
+    height:100%;
   }
   .header__logo .header__logo-text{
     height:24px;

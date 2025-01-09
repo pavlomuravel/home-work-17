@@ -1,6 +1,9 @@
 @use"fonts" as *;
 @use"variables" as *;
-
+body {
+    min-width: 237px;
+    overflow: hidden;
+}
 .header {
     padding-top: 50px;
     padding-inline: 60px;
@@ -81,6 +84,12 @@
 
         &-language{
             display: flex;
+            .language__hover a{
+                &:hover {
+                    background-color: $bg;
+                    border-radius: 8px;
+                }
+            }
             
             .language a {
                 padding-inline: 7px;
@@ -92,10 +101,7 @@
                 font-size: 12px;
                 color: $text;
                 text-decoration: none;
-                &:hover {
-                    background-color: $bg;
-                    border-radius: 8px;
-                }
+               
               
                 
             }
@@ -137,8 +143,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            
+            svg path {
+                fill: $text; 
+            }
+
+            &:hover svg path {
+                fill: $accent; 
+            }
+           
         }
+
+        
+
+       
     }
     &__nav{
         white-space: nowrap;
@@ -157,11 +174,12 @@
                 color: $regular;
                 text-decoration: none;
                 padding-bottom: 3px;
-                &:hover {
+                   
+            }
+            .nav__hover a {
+                &:hover{
                     border-bottom: 2px solid $regular;
-                    
                 }
-           
             }
             .nav-artiv a {
                 border-bottom: 2px solid $accent;
