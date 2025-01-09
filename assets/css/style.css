@@ -375,46 +375,16 @@ body{
   .header{
     padding-inline:2%;
   }
-  .header__contak-facebook img{
-    display:none;
-  }
-  .dot{
-    display:none;
-  }
   .header__contak{
     -webkit-box-pack:justify;
         -ms-flex-pack:justify;
             justify-content:space-between;
-  }
-}
-@media (max-width: 375px){
-  .header__contak{
-    gap:0px;
-    -webkit-box-pack:justify;
-        -ms-flex-pack:justify;
-            justify-content:space-between;
-  }
-  .header__contak-adress{
-    display:none;
-  }
-  .dot{
-    display:none;
-    position:absolute;
-  }
-  .dot img{
-    display:none;
-    position:absolute;
   }
   .header__contak-facebook svg{
     display:none;
   }
-  .header__contak-phone{
-    margin-left:auto;
-    margin-right:0;
-  }
-  .header__nav{
-    display:none;
-  }
+}
+@media (max-width: 375px){
   .header{
     display:grid;
     grid-template-rows:45px 57px;
@@ -424,7 +394,7 @@ body{
     gap:0px;
     row-gap:15px;
   }
-  .header__logo{
+  .header .header__logo{
     padding:0;
     gap:4px;
     height:50px;
@@ -433,34 +403,58 @@ body{
             align-items:center;
     padding-inline:15px;
   }
-  .header__logo .header__logo-img{
+  .header .header__logo .header__logo-img{
     width:69.33px;
     height:32px;
   }
-  .header__logo .header__logo-img svg{
+  .header .header__logo .header__logo-img svg{
     width:100%;
     height:100%;
   }
-  .header__logo .header__logo-slash{
+  .header .header__logo .header__logo-slash{
     width:11.62px;
     height:26px;
     margin-bottom:8px;
   }
-  .header__logo .header__logo-slash svg{
+  .header .header__logo .header__logo-slash svg{
     width:100%;
     height:100%;
   }
-  .header__logo .header__logo-text{
-    height:24px;
+  .header .header__logo .header__logo-text{
+    height:32px;
   }
-  .header__logo .header__logo-text p{
+  .header .header__logo .header__logo-text p{
     font-size:20px;
     line-height:24.38px;
   }
-  .header__logo-burger{
+  .header .header__logo .header__logo-burger{
     display:block;
   }
-  .header__contakt{
+  .header .header__contakt{
     background-color:#F5F5FA;
+  }
+  .header .header__contakt .dot img{
+    display:none;
+    position:absolute;
+  }
+  .header__nav{
+    display:none;
+  }
+  .header__contak{
+    background-color:#F5F5FA;
+    gap:0px;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+  }
+  .header__contak-adress{
+    display:none;
+  }
+  .header__contak-facebook svg{
+    display:none;
+  }
+  .header__contak-phone{
+    margin-left:auto;
+    margin-right:0;
   }
 }
