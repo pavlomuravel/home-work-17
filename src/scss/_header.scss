@@ -13,6 +13,7 @@
     row-gap: 16px;
     height: 100%;
     justify-content: space-between;
+    overflow: hidden;
     
     
     &__logo{
@@ -35,6 +36,37 @@
                 font-size: 36px;
                 line-height: 43.88px;
                 color:$main;
+            }
+        }
+
+        &-burger {
+            padding: 0;
+            width: 32px;
+            height: 33px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            margin-left: auto;
+            margin-right: 0;
+            display: none;
+            
+            svg {
+                background: #fff;
+                :active {
+                    border-radius: 8px;
+                    background-color: $separator;
+                }
+                
+            }
+            
+        }
+        button {
+            background: #fff;
+            :active {
+                border-radius: 8px;
+                background-color: $separator;
             }
         }
     }
@@ -139,4 +171,6 @@
            
         }
     }
+
+    
 }

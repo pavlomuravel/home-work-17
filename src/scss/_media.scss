@@ -52,31 +52,90 @@
     .header__contak {
         gap: 0px;
         justify-content: space-between;
+        
     }
     .header__contak-adress {
         display: none;
     }
     .dot {
         display: none;
+        position: absolute;
+    }
+    .dot img {
+        display: none;
+        position: absolute;
     }
     .header__contak-facebook {
         display: none;
     }
    
     .header__contak-phone {
-        margin-left: 108px;
+        
+        margin-left: auto;
+        margin-right: 0;
     }
     .header__nav {
         display: none;
     }
     .header {
+        
+        display: grid;
+        grid-template-rows: 45px 57px ;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header__contakt"
+            "header__logo";
         padding: 0;
+        gap: 0px;
+        row-gap: 15px;
+              
+    }
+    .header__logo {
+        padding: 0;
+        gap: 4px;
+        height: 50px;
+        align-items: center;
+        padding-inline: 15px;
+       
+        .header__logo-img {
+            width: 69.33px;
+            height: 24.8px;
+            overflow: hidden;
+           
+            img {
+                width: 69.33px;
+                height: 24.8px;
+            }
+         
+            
+        }
+        .header__logo-slash  {
+            width: 11.62px;
+            height: 26px; 
+            overflow: hidden;
+            
+            img {
+                width: 11.62px;
+                height: 26px; 
+            }
+            
+        }
+        .header__logo-text {
+            height: 24px;
+            p {
+                font-size: 20px;
+                line-height: 24.38px;
+            }
+            
+        }
+        
+    }
+    .header__logo-burger {
+        display: block;
     }
     .header__contakt {
         background-color: $bg;
-        padding-block: 10px;
-        padding-inline: 15px;
-        border: 3px solid #000;
+        
     }
 }
     
