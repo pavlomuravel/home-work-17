@@ -17,6 +17,10 @@
             "header__nav";
         padding-inline: 60px;      
     }
+
+    .footer{
+        padding-inline: 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -29,6 +33,24 @@
 
         &__nav{
             justify-content: start;
+        }
+    }
+
+    .footer {
+        padding-inline: 7.8%;;
+        &__conteiner {
+            grid-template-columns: 1fr ;
+            grid-template-rows: 20px 38px 20px;
+            grid-template-areas:
+            "footer__contakt"
+            "footer__networks" 
+            "footer__company";
+            row-gap: 21px;
+
+            &-company{
+                margin: 0;
+                text-align: center;
+            }
         }
     }
 }
@@ -44,7 +66,11 @@
                 display: none;
             }
         }
-    }   
+    }
+    
+    .footer{
+        padding-inline: 2%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -130,7 +156,78 @@
                 margin-right: 0;
             }
         }
-    }            
+    }
+    
+    .footer{
+        padding-block: 0;
+        text-align: center;
+        &__conteiner {
+            justify-content: center;
+            grid-template-rows: 45px 98px 20px ;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "footer__contakt"
+                "footer__networks"
+                "footer__company";
+            padding: 30px;
+            gap: 0px;
+            row-gap: 21px;
+          
+            &-contakt {
+                display: grid;
+                justify-content: center;
+                grid-template-rows: 20px 15px ;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "footer__adres"
+                    "footer__map";
+                padding: 0;
+                gap: 0px;
+                row-gap: 10px;
+                .footer__conteiner-adres {
+                    grid-area:footer__adres;
+                }
+                .footer__conteiner-map {
+                    grid-area:footer__map;
+                }
+
+                .dot img {
+                    position: absolute;
+                    display: none;
+                }
+            }
+    
+            &-networks {
+                display: grid;
+                justify-content: center;
+                grid-template-rows: 38px 20px 20px ;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "footer__facebook"
+                    "footer__phone"
+                    "footer__email";
+                padding: 0;
+                gap: 0px;
+                row-gap: 10px;
+                .dot img {
+                    position: absolute;
+                    display: none;
+                }
+
+                .footer__conteiner-facebook {
+                    grid-area:footer__facebook;
+                }
+
+                .footer__conteiner-phone{
+                    grid-area:footer__phone;
+                }
+
+                .footer__conteiner-email{
+                    grid-area:footer__email;
+                }
+            }
+        }
+    }
 }
 
 
