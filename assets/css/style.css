@@ -258,32 +258,48 @@ body{
   padding-block:30px;
 }
 .footer__conteiner{
-  border:3px solid #000;
   display:grid;
-  grid-template-columns:197px 6px 58px 1fr 1fr 277px;
+  grid-template-columns:1fr 1fr;
   grid-template-rows:20px 38px;
-  grid-template-areas:"footer__adres footer__dot footer__map footer__company footer__company footer__company" "footer__facebook footer__dot footer__phone footer__dot footer__email footer__company";
-  row-gap:16px;
+  grid-template-areas:"footer__contakt footer__company" "footer__networks footer__company";
+  row-gap:21px;
   height:100%;
   -webkit-box-pack:justify;
       -ms-flex-pack:justify;
           justify-content:space-between;
   overflow:hidden;
+  border:3px solid #000;
 }
-.footer__conteiner-dot{
-  grid-area:footer__dot;
+.footer__conteiner-contakt{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  gap:10px;
+  white-space:nowrap;
+  grid-area:footer__contakt;
+}
+.footer__conteiner-networks{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  gap:10px;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  white-space:nowrap;
+  grid-area:footer__networks;
+}
+.footer__conteiner-company{
+  margin-right:0;
+  margin-left:auto;
+  white-space:nowrap;
+  grid-area:footer__company;
 }
 .footer__conteiner-adres{
-  grid-area:footer__adres;
   font-family:montserrat;
   font-size:16px;
   line-height:19.5px;
   color:#323264;
-  border:3px solid #000;
-}
-.footer__conteiner-map{
-  grid-area:footer__map;
-  border:3px solid #000;
 }
 .footer__conteiner-map a{
   text-decoration:none;
@@ -295,10 +311,6 @@ body{
   letter-spacing:1px;
   color:#006CCF;
 }
-.footer__conteiner-facebook{
-  grid-area:footer__facebook;
-  border:3px solid #000;
-}
 .footer__conteiner-facebook svg path{
   fill:#006CCF;
 }
@@ -306,18 +318,12 @@ body{
   fill:#F0145A;
 }
 .footer__conteiner-phone{
-  grid-area:footer__phone;
   font-family:montserrat;
   font-size:16px;
   line-height:19.5px;
   color:#323264;
   font-weight:700;
   color:#46466E;
-  border:3px solid #000;
-}
-.footer__conteiner-email{
-  grid-area:footer__email;
-  border:3px solid #000;
 }
 .footer__conteiner-email a{
   text-decoration:none;
@@ -331,12 +337,10 @@ body{
   color:#F0145A;
 }
 .footer__conteiner-company{
-  grid-area:footer__company;
   font-family:montserrat;
   font-size:16px;
   line-height:19.5px;
   color:#B3B3BA;
-  border:3px solid #000;
 }
 @media (max-width: 880px){
   .header{
