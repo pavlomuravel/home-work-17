@@ -1,0 +1,107 @@
+@use"fonts" as *;
+@use"variables" as *;
+
+.footer{
+    background-color: $bg;
+    border: 3px solid #000;
+    margin-top: 200px;
+    padding-inline: 60px;
+    padding-block: 30px;
+
+    &__conteiner{
+        border: 3px solid #000;
+        display: grid;
+        grid-template-columns: 197px 6px 58px 1fr 1fr 277px;
+        grid-template-rows: 20px 38px;
+        grid-template-areas:
+        "footer__adres footer__dot footer__map footer__company footer__company footer__company" 
+        "footer__facebook footer__dot footer__phone footer__dot footer__email footer__company";
+        row-gap: 16px;
+        height: 100%;
+        justify-content: space-between;
+        overflow: hidden;
+
+        &-dot{
+            grid-area: footer__dot;
+        }
+        
+        &-adres{
+            grid-area: footer__adres;
+            font-family: montserrat;
+            font-size: 16px;
+            line-height: 19.5px;
+            color: $main;
+            border: 3px solid #000;
+        }
+
+        &-map{
+            grid-area: footer__map;
+            border: 3px solid #000;
+            a{
+                text-decoration: none;
+                font-family: montserrat;
+                font-size: 12px;
+                line-height: 14.63px;
+                color: $main;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: $active;
+                
+            }
+        }
+
+        &-facebook{
+            grid-area: footer__facebook;
+            border: 3px solid #000;
+            svg path {
+                fill: $active; 
+               
+            }
+
+            &:hover svg path {
+                fill: $accent; 
+            }
+        }
+
+        &-phone{
+            grid-area: footer__phone;
+            font-family: montserrat;
+            font-size: 16px;
+            line-height: 19.5px;
+            color: $main;
+            font-weight: 700;
+            color: $alt;
+            border: 3px solid #000;
+        }
+
+        &-email{
+            grid-area: footer__email;
+            border: 3px solid #000;
+            a {
+                text-decoration: none;
+                font-family: montserrat;
+                font-size: 16px;
+                line-height: 19.5px;
+                font-weight: 700;
+                color: $active;
+                &:hover{
+                    color: $accent;
+                }
+            }
+        }
+
+        &-company{
+            grid-area: footer__company;
+            font-family: montserrat;
+            font-size: 16px;
+            line-height: 19.5px;
+            color: $text;
+            border: 3px solid #000;
+        }
+
+    }
+
+
+    
+    
+}
