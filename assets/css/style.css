@@ -249,9 +249,228 @@ body{
   color:#F0145A;
 }
 
-.main{
-  height:500px;
-  background:linear-gradient(45deg, #643E72 0%, #323264 100%, #323264 100%);
+.main__abaut-information{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  gap:30px;
+  padding-block:60px;
+  padding-inline:180px;
+}
+.main__abaut-information .information-tex{
+  width:100%;
+}
+.main__abaut-information .information-tex h1{
+  font-family:"Montserrat";
+  font-weight:700;
+  font-size:38px;
+  line-height:46.32px;
+  background:linear-gradient(0.13deg, #F0145A 0%, #EF8080 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.main__abaut-information .information-tex p{
+  font-family:"Montserrat";
+  font-weight:400;
+  font-size:19px;
+  line-height:30px;
+  color:black;
+  padding-top:20px;
+}
+.main__abaut-information .information-tex .top-pading{
+  padding-top:28px;
+}
+.main__abaut-information .information-show{
+  width:322px;
+  height:322px;
+  border-left:4px solid #E6E6F0;
+  padding-left:34px;
+  padding-right:43px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  gap:40px;
+}
+.main__abaut-information .information-show__item .item__heading{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  gap:8px;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+}
+.main__abaut-information .information-show__item .item__heading img{
+  width:32px;
+  height:32px;
+}
+.main__abaut-information .information-show__item .item__heading-title{
+  font-family:"Montserrat";
+  font-weight:700;
+  font-size:38px;
+  line-height:46.32px;
+  background:linear-gradient(0.13deg, #F0145A 0%, #EF8080 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-size:36px;
+  height:43.88px;
+}
+.main__abaut-information .information-show__item .item-text{
+  font-family:"Montserrat";
+  font-size:16px;
+  line-height:19.5px;
+  padding-top:10px;
+  white-space:nowrap;
+}
+.main .main__abaut-team .abaut-team__conteiner{
+  position:relative;
+  background-image:url(../images/Team.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  margin-top:-197px;
+  overflow:hidden;
+}
+.main .main__abaut-team .abaut-team__conteiner-title{
+  position:absolute;
+  top:50%;
+  left:50%;
+  text-align:center;
+  -webkit-transform:translate(-50%, -50%);
+      -ms-transform:translate(-50%, -50%);
+          transform:translate(-50%, -50%);
+  padding:10px 0px;
+  width:478px;
+}
+.main .main__abaut-team .abaut-team__conteiner h2{
+  font-family:montserrat;
+  font-weight:700;
+  font-size:96px;
+  line-height:117.02px;
+  letter-spacing:63px;
+  opacity:80%;
+  text-align:center;
+  color:white;
+  text-shadow:0px 15px 30px rgba(40, 40, 86, 0.8);
+}
+.main .main__abaut-quality{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  padding-inline:180px;
+  padding-block:60px;
+  gap:60px;
+  margin-top:-197px;
+}
+.main .main__abaut-quality .quality__info .quality__info-text{
+  font-family:"Montserrat";
+  font-weight:400;
+  font-size:19px;
+  line-height:30px;
+  color:black;
+}
+.main .main__abaut-quality .quality__more{
+  height:138px;
+}
+.main .main__abaut-quality .quality__more .quality__more-title{
+  font-family:"Montserrat";
+  font-weight:700;
+  font-size:38px;
+  line-height:46.32px;
+  background:linear-gradient(0.13deg, #F0145A 0%, #EF8080 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  width:362px;
+}
+.main .main__abaut-achievements{
+  background-color:#F5F5FA;
+}
+.main .main__abaut-achievements .achievements__title{
+  text-align:center;
+  padding-block:30px;
+}
+.main .main__abaut-achievements .achievements__title h3{
+  font-size:14px;
+  font-family:montserrat;
+  font-weight:700;
+  line-height:17.07px;
+  letter-spacing:1px;
+  color:#323264;
+  text-transform:uppercase;
+}
+.main .main__abaut-achievements .achievements__layout{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  gap:40px;
+  padding-inline:60px;
+}
+.main .main__abaut-achievements .achievements__layout-img{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  width:auto;
+  height:110px;
+  border-radius:12px;
+  background-color:white;
+  padding-block:24px;
+}
+.main .main__abaut-achievements .achievements__layout-img img{
+  height:60px;
+  width:auto;
+  -o-object-fit:cover;
+     object-fit:cover;
+  max-width:100%;
+}
+.main .main__abaut-achievements .current__imitation{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  gap:15px;
+  padding-block:30px;
+}
+.main .main__abaut-achievements .current__imitation a .current__imitation-item{
+  border-radius:50%;
+  width:16px;
+  height:16px;
+  opacity:20%;
+  background-color:#24A3FF;
+}
+.main .main__abaut-achievements .current__imitation a .current__hover:hover{
+  opacity:60%;
+}
+.main .main__abaut-achievements .current__imitation a .active{
+  opacity:100%;
+}
+.main .main__abaut-achievements .current__imitation .no__aktiv{
+  display:none;
+  position:absolute;
+}
+.main .main__abaut-achievements .achievements__line{
+  overflow:hidden;
+  margin-inline:60px;
+  width:auto;
+  height:2px;
+  background-color:#E6E6F0;
 }
 
 .footer{
@@ -342,9 +561,58 @@ body{
   line-height:19.5px;
   color:#B3B3BA;
 }
+@media (max-width: 1200px){
+  .main .main__abaut-information{
+    padding-inline:60px;
+  }
+  .main .main__abaut-information .information-show{
+    padding-right:0;
+  }
+  .main .main__abaut-team .abaut-team__conteiner{
+    margin-top:-155px;
+  }
+  .main .main__abaut-quality{
+    margin-top:-155px;
+    padding-inline:60px;
+  }
+}
+@media (max-width: 1024px){
+  .main .main__abaut-team .abaut-team__conteiner{
+    margin-top:-130px;
+  }
+  .main .main__abaut-team .abaut-team__conteiner h2{
+    font-size:86px;
+    line-height:63px;
+  }
+  .main .main__abaut-quality{
+    margin-top:-130px;
+  }
+  .main .main__abaut-achievements .achievements__layout img{
+    height:60px;
+  }
+  .main .main__abaut-achievements .achievements__layout-img img{
+    height:50px;
+  }
+}
 @media (max-width: 880px){
   .header{
     padding-inline:2%;
+  }
+  .main .main__abaut-team .abaut-team__conteiner{
+    margin-top:-114px;
+  }
+  .main .main__abaut-team .abaut-team__conteiner h2{
+    font-size:70px;
+  }
+  .main .main__abaut-quality{
+    margin-top:-114px;
+    padding-inline:4%;
+  }
+  .main__abaut-information{
+    padding-inline:4%;
+  }
+  .main__abaut-team .abaut-team__conteiner{
+    margin-top:-112px;
   }
 }
 @media (max-width: 830px){
@@ -354,6 +622,9 @@ body{
     grid-template-rows:25px 60px 25px;
     grid-template-areas:"header__contakt" "header__logo" "header__nav";
     padding-inline:60px;
+  }
+  .main .main__abaut-achievements .achievements__layout-img img{
+    height:auto;
   }
   .footer{
     padding-inline:30px;
@@ -372,6 +643,31 @@ body{
     -webkit-box-pack:start;
         -ms-flex-pack:start;
             justify-content:start;
+  }
+  .main .main__abaut-information{
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    padding-inline:60px;
+  }
+  .main .main__abaut-team .abaut-team__conteiner{
+    margin-top:-99px;
+  }
+  .main .main__abaut-team .abaut-team__conteiner h2{
+    font-size:46px;
+    line-height:56.07px;
+  }
+  .main .main__abaut-quality{
+    margin-top:-99px;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    padding-inline:60px;
+  }
+  .main .main__abaut-achievements .achievements__layout-img img{
+    height:40px;
   }
   .footer{
     padding-inline:7.8%;
@@ -398,6 +694,41 @@ body{
   }
   .header__contak-facebook svg{
     display:none;
+  }
+  .main .main__abaut-information{
+    padding-inline:30px;
+    padding-block:30px;
+    overflow:hidden;
+  }
+  .main .main__abaut-information .information-show__item .item-text{
+    white-space:normal;
+  }
+  .main .main__abaut-team .abaut-team__conteiner{
+    margin-top:-65px;
+  }
+  .main .main__abaut-team .abaut-team__conteiner h2{
+    font-size:40px;
+    letter-spacing:50px;
+  }
+  .main .main__abaut-quality{
+    margin-top:-65px;
+    padding-inline:30px;
+    padding-block:30px;
+    overflow:hidden;
+  }
+  .main .main__abaut-information{
+    padding-inline:30px;
+    padding-block:30px;
+  }
+  .main .main__abaut-achievements .achievements__layout-img img{
+    height:40px;
+  }
+  .main .main__abaut-achievements .achievements__layout .speshal{
+    display:none;
+  }
+  .main .main__abaut-achievements .current__imitation a .no__aktiv{
+    position:static;
+    display:block;
   }
   .footer{
     padding-inline:2%;
@@ -475,6 +806,46 @@ body{
   .header__contak-phone{
     margin-left:auto;
     margin-right:0;
+  }
+  .main .main__abaut-team .abaut-team__conteiner{
+    margin-top:-48px;
+  }
+  .main .main__abaut-team .abaut-team__conteiner h2{
+    font-size:36px;
+    letter-spacing:13px;
+  }
+  .main .main__abaut-quality{
+    gap:30px;
+    margin-top:-48px;
+    padding-block:30px;
+  }
+  .main .main__abaut-quality .quality__more .quality__more-title{
+    font-size:30px;
+    line-height:36.57px;
+    width:100%;
+  }
+  .main__abaut-information{
+    overflow:hidden;
+  }
+  .main__abaut-information .information-tex h1{
+    font-size:30px;
+    line-height:36.57px;
+  }
+  .main__abaut-information .information-tex p{
+    font-size:19px;
+    line-height:30px;
+  }
+  .main__abaut-information .information-show{
+    overflow:hidden;
+    width:315px;
+    height:100%;
+  }
+  .main__abaut-information .information-show__item{
+    padding-right:34px;
+  }
+  .main__abaut-information .information-show__item .item-text{
+    padding-right:10px;
+    white-space:normal;
   }
   .footer{
     padding-block:0;

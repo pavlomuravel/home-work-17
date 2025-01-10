@@ -1,8 +1,102 @@
 @use"variables" as *;
 
+@media (max-width: 1200px) {
+    .main {
+        .main__abaut-information {
+            padding-inline: 60px;
+    
+            .information-show{
+                padding-right: 0;
+            }
+        }
+
+        .main__abaut-team {
+            
+            .abaut-team__conteiner{
+                margin-top: -155px;
+            }
+        }
+
+        .main__abaut-quality {
+            margin-top: -155px;
+            padding-inline: 60px;
+        }
+    
+    }
+
+
+}
+
+@media (max-width: 1024px){
+    .main {
+        .main__abaut-team{
+            .abaut-team__conteiner{
+                margin-top: -130px;
+                h2 {
+                    font-size: 86px;
+                    line-height: 63px;
+                }
+            }
+        }
+
+        .main__abaut-quality {
+            margin-top: -130px;
+        }
+
+        .main__abaut-achievements {
+            .achievements__layout {
+
+                img {
+                    height: 60px;
+                }
+            }
+        }
+
+        .main__abaut-achievements {
+            .achievements__layout {
+                &-img{
+                    img {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
 @media (max-width: 880px){
     .header {
         padding-inline: 2%;
+    }
+
+    .main {
+        .main__abaut-team {
+            
+            .abaut-team__conteiner{
+                margin-top: -114px;
+                h2 {
+                    font-size: 70px;
+                }
+            }
+        }
+
+        .main__abaut-quality {
+            margin-top: -114px;
+            padding-inline: 4%;
+        }
+    }
+
+    .main__abaut-information {
+        padding-inline: 4%;
+
+    }
+
+    .main__abaut-team {
+        .abaut-team__conteiner{
+            margin-top: -112px;
+        }
     }
 }
 
@@ -17,6 +111,20 @@
             "header__nav";
         padding-inline: 60px;      
     }
+
+    .main {
+        .main__abaut-achievements {
+            .achievements__layout {
+                &-img{
+                    img {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+
 
     .footer{
         padding-inline: 30px;
@@ -35,6 +143,43 @@
             justify-content: start;
         }
     }
+
+    .main {
+        .main__abaut-information {
+            flex-direction: column;
+            padding-inline: 60px;
+        }
+        .main__abaut-team {
+            
+            .abaut-team__conteiner{
+                margin-top: -99px;
+                h2 {
+                    font-size: 46px;
+                    line-height: 56.07px;
+                }
+            }
+        }
+
+        .main__abaut-quality {
+            margin-top: -99px;
+            flex-direction: column;
+            padding-inline: 60px;
+        }
+
+        .main__abaut-achievements {
+            .achievements__layout {
+                &-img{
+                    img {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
 
     .footer {
         padding-inline: 7.8%;;
@@ -67,6 +212,72 @@
             }
         }
     }
+
+    .main {
+
+        .main__abaut-information {
+            padding-inline: 30px;
+            padding-block: 30px;
+            overflow: hidden;
+
+            .information-show {
+                &__item {
+
+                    .item-text {
+                        white-space:normal;
+                    }
+                }
+                
+            }
+        }
+        .main__abaut-team {
+            
+            .abaut-team__conteiner{
+                margin-top: -65px;
+                h2 {
+                    font-size: 40px;
+                    letter-spacing: 50px;
+                }
+            }
+        }
+        .main__abaut-quality {
+            margin-top: -65px;
+            padding-inline: 30px;
+            padding-block: 30px;
+            overflow: hidden;
+        }
+        .main__abaut-information {
+            padding-inline: 30px;
+            padding-block: 30px;
+        }
+        .main__abaut-achievements {
+            .achievements__layout {
+                &-img{
+                    img {
+                        height: 40px;
+                    }
+                }
+    
+                .speshal {
+                    display: none;
+                }
+            }
+
+            .current__imitation{
+                a {
+                    .no__aktiv{
+                        position: static;
+                        display: block;
+                    }
+                }
+            }
+    
+
+        }
+    }
+ 
+
+
     
     .footer{
         padding-inline: 2%;
@@ -154,6 +365,63 @@
             &-phone {
                 margin-left: auto;
                 margin-right: 0;
+            }
+        }
+    }
+
+    .main {
+        .main__abaut-team {
+            
+            .abaut-team__conteiner{
+                margin-top: -48px;
+                h2 {
+                    font-size: 36px;
+                    letter-spacing: 13px;
+                }
+            }
+        }
+        .main__abaut-quality {
+            gap: 30px;
+            margin-top: -48px;
+            padding-block: 30px;
+            .quality__more{
+                
+                .quality__more-title{
+                    font-size: 30px;
+                    line-height: 36.57px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .main__abaut-information {
+        overflow: hidden;
+
+        .information-tex {
+
+            h1 {
+                font-size: 30px;
+                line-height: 36.57px;
+            }
+
+            p {
+                font-size: 19px;
+                line-height: 30px;
+            }
+        }
+
+        .information-show {
+            overflow: hidden;
+            width: 315px;
+            height: 100%;
+            &__item{
+                padding-right: 34px;
+                .item-text{
+                    padding-right: 10px;
+                    white-space:normal;
+
+                }
             }
         }
     }
