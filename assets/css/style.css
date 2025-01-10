@@ -63,7 +63,6 @@ table{
 }
 body{
   min-width:237px;
-  overflow:hidden;
 }
 
 .header{
@@ -248,6 +247,11 @@ body{
 .header__nav-item .nav-aktiv a{
   border-bottom:2px solid #F0145A;
   color:#F0145A;
+}
+
+.main{
+  height:500px;
+  background:linear-gradient(45deg, #643E72 0%, #323264 100%, #323264 100%);
 }
 
 .footer{

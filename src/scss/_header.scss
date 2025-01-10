@@ -2,7 +2,6 @@
 @use"variables" as *;
 body {
     min-width: 237px;
-    overflow: hidden;
 }
 .header {
     padding-top: 50px;
@@ -191,4 +190,12 @@ body {
     }
 
     
+}
+
+.main {
+    height: 500px;
+    background: linear-gradient(220deg, #323264 0%, #323264 59.89%, #643E72 100%);
+
+
+
 }
