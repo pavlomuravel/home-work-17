@@ -674,6 +674,7 @@ body{
 }
 
 .main__publications{
+  margin-top:60px;
   background-color:#F5F5FA;
   padding-inline:60px;
   padding-block:30px;
@@ -681,8 +682,8 @@ body{
 .main__publications .main__publications-conteiner{
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows:42px 1fr 1fr 56px;
-  grid-template-areas:"publications-conteiner-segmented publications-conteiner-segmented publications-conteiner-segmented" "publications-conteiner-1 publications-conteiner-2 publications-conteiner-3" "publications-conteiner-4 publications-conteiner-5 publications-conteiner-6" "publications-conteiner-button publications-conteiner-button publications-conteiner-button";
+  grid-template-rows:42px 1fr 1fr 56px 2px;
+  grid-template-areas:"publications-conteiner-segmented publications-conteiner-segmented publications-conteiner-segmented" "publications-conteiner-1 publications-conteiner-2 publications-conteiner-3" "publications-conteiner-4 publications-conteiner-5 publications-conteiner-6" "publications-conteiner-button publications-conteiner-button publications-conteiner-button" "publications-conteiner-line publications-conteiner-line publications-conteiner-line";
   gap:30px;
 }
 .main__publications .main__publications-conteiner .publications-conteiner-segmented{
@@ -757,6 +758,7 @@ body{
 .main__publications .main__publications-conteiner .publications-conteiner{
   width:100%;
   height:100%;
+  max-width:600px;
 }
 .main__publications .main__publications-conteiner .publications-conteiner a{
   text-decoration:none;
@@ -776,6 +778,7 @@ body{
       -ms-flex-direction:column;
           flex-direction:column;
   gap:15px;
+  height:100%;
 }
 .main__publications .main__publications-conteiner .publications-conteiner .publications-conteiner__news .conteiner__news-title{
   font-family:Montserrat;
@@ -783,6 +786,9 @@ body{
   font-size:16px;
   line-height:19.5px;
   color:#24A3FF;
+}
+.main__publications .main__publications-conteiner .publications-conteiner .publications-conteiner__news .conteiner__news-title:hover{
+  color:#F0145A;
 }
 .main__publications .main__publications-conteiner .publications-conteiner .publications-conteiner__news .conteiner__news-data p{
   font-family:Montserrat;
@@ -824,27 +830,74 @@ body{
   background-color:#006CCF;
 }
 .main__publications .main__publications-conteiner .publications-conteiner-line{
-  border:3px solid #000;
+  background-color:#E6E6F0;
   width:100%;
   height:2px;
+  grid-area:publications-conteiner-line;
 }
 .main__publications .main__publications-conteiner .publications-conteiner-1{
   grid-area:publications-conteiner-1;
+  overflow:hidden;
+}
+.main__publications .main__publications-conteiner .publications-conteiner-1 .publications-conteiner__img{
+  background-image:url(../images/Publication-1.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:200px;
 }
 .main__publications .main__publications-conteiner .publications-conteiner-2{
   grid-area:publications-conteiner-2;
+  overflow:hidden;
+}
+.main__publications .main__publications-conteiner .publications-conteiner-2 .publications-conteiner__img{
+  background-image:url(../images/Publication-2.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:200px;
 }
 .main__publications .main__publications-conteiner .publications-conteiner-3{
   grid-area:publications-conteiner-3;
+  overflow:hidden;
+}
+.main__publications .main__publications-conteiner .publications-conteiner-3 .publications-conteiner__img{
+  background-image:url(../images/Publication-3.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:200px;
 }
 .main__publications .main__publications-conteiner .publications-conteiner-4{
   grid-area:publications-conteiner-4;
+  overflow:hidden;
+}
+.main__publications .main__publications-conteiner .publications-conteiner-4 .publications-conteiner__img{
+  background-image:url(../images/Publication-4.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:200px;
 }
 .main__publications .main__publications-conteiner .publications-conteiner-5{
   grid-area:publications-conteiner-5;
+  overflow:hidden;
+}
+.main__publications .main__publications-conteiner .publications-conteiner-5 .publications-conteiner__img{
+  background-image:url(../images/Publication-5.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:200px;
 }
 .main__publications .main__publications-conteiner .publications-conteiner-6{
   grid-area:publications-conteiner-6;
+  overflow:hidden;
 }
 
 .footer{
@@ -1032,6 +1085,12 @@ body{
   .main__team-page{
     padding-inline:5%;
   }
+  .main__publications{
+    padding-inline:5%;
+  }
+  .main__publications{
+    padding-inline:5%;
+  }
 }
 @media (max-width: 830px){
   .header{
@@ -1112,6 +1171,11 @@ body{
   }
   .main__team-page .team-page__conteiner .team-page__conteiner-foto{
     min-width:100px;
+  }
+  .main__publications .main__publications-conteiner{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:42px 1fr 1fr 1fr 56px 2px;
+    grid-template-areas:"publications-conteiner-segmented publications-conteiner-segmented" "publications-conteiner-1 publications-conteiner-2" "publications-conteiner-3 publications-conteiner-4" "publications-conteiner-5 publications-conteiner-6" "publications-conteiner-button publications-conteiner-button" "publications-conteiner-line publications-conteiner-line";
   }
   .footer{
     padding-inline:7.8%;
@@ -1205,6 +1269,15 @@ body{
   }
   .main__team-page .team-page__conteiner .team-page__conteiner-foto{
     min-width:0;
+  }
+  .main__publications{
+    margin-top:0;
+    padding-inline:30px;
+  }
+  .main__publications .main__publications-conteiner{
+    grid-template-columns:1fr;
+    grid-template-rows:42px 1fr 1fr 1fr 1fr 1fr 1fr 56px 2px;
+    grid-template-areas:"publications-conteiner-segmented" "publications-conteiner-1" "publications-conteiner-2" "publications-conteiner-3" "publications-conteiner-4" "publications-conteiner-5" "publications-conteiner-6" "publications-conteiner-button" "publications-conteiner-line";
   }
   .footer{
     padding-inline:2%;

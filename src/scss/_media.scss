@@ -168,6 +168,14 @@
     .main__team-page {
         padding-inline: 5%;
     }
+
+    .main__publications {
+        padding-inline: 5%;
+    }
+
+    .main__publications {
+        padding-inline: 5%;
+    }
 }
 
 
@@ -210,6 +218,7 @@
 
         }
     }
+
 
 
 
@@ -292,17 +301,31 @@
         }
     }
 
-.main__team-page {
-    padding-block: 40px;
-    .team-page__conteiner {
-        flex-wrap: wrap;
-        gap: 30px;
-        .team-page__conteiner-foto {
-            min-width: 100px;
+    .main__team-page {
+        padding-block: 40px;
+        .team-page__conteiner {
+            flex-wrap: wrap;
+            gap: 30px;
+            .team-page__conteiner-foto {
+                min-width: 100px;
+            }
         }
+    
     }
 
-}
+    .main__publications {
+        .main__publications-conteiner {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:42px 1fr 1fr 1fr 56px 2px;
+            grid-template-areas:
+                    "publications-conteiner-segmented publications-conteiner-segmented"
+                    "publications-conteiner-1 publications-conteiner-2"
+                    "publications-conteiner-3 publications-conteiner-4"
+                    "publications-conteiner-5 publications-conteiner-6"
+                    "publications-conteiner-button publications-conteiner-button"
+                    "publications-conteiner-line publications-conteiner-line";
+        }
+    }
 
 
     .footer {
@@ -460,6 +483,25 @@
             .team-page__conteiner-foto {
                 min-width: 0;
             }
+        }
+    }
+
+    .main__publications {
+        margin-top: 0;
+        padding-inline: 30px;
+        .main__publications-conteiner {
+            grid-template-columns: 1fr;
+            grid-template-rows:42px 1fr 1fr 1fr 1fr 1fr 1fr 56px 2px;
+            grid-template-areas:
+                    "publications-conteiner-segmented"
+                    "publications-conteiner-1"
+                    "publications-conteiner-2"
+                    "publications-conteiner-3"
+                    "publications-conteiner-4"
+                    "publications-conteiner-5"
+                    "publications-conteiner-6"
+                    "publications-conteiner-button"
+                    "publications-conteiner-line";
         }
     }
     
