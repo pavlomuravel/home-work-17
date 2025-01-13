@@ -24,6 +24,16 @@
     
     }
 
+    .main__team-page {
+        padding-inline: 100px;
+        .team-page__conteiner {
+            .team-page__conteiner-foto {
+                max-height: 420px;
+            }
+        }
+    }       
+    
+
 
 }
 
@@ -69,6 +79,7 @@
         &-conteiner{
 
             .main__team-item{
+
                 .team-item__foto {
                     img {
                         aspect-ratio: 3/4;
@@ -77,6 +88,30 @@
             }
         }
     }
+
+    .main__team-page {
+        padding-inline: 60px;
+
+        .team-page__conteiner {
+            .team-page__conteiner-foto {
+                aspect-ratio: 3/3;
+                max-height: 375px;
+            }
+
+            .team-page__conteiner-informacion {
+                .conteiner-informacion__contakt {
+                    width: 218px;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    .team-page__circle{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 880px){
@@ -128,6 +163,10 @@
             
 
         }
+    }
+
+    .main__team-page {
+        padding-inline: 5%;
     }
 }
 
@@ -253,6 +292,17 @@
         }
     }
 
+.main__team-page {
+    padding-block: 40px;
+    .team-page__conteiner {
+        flex-wrap: wrap;
+        gap: 30px;
+        .team-page__conteiner-foto {
+            min-width: 100px;
+        }
+    }
+
+}
 
 
     .footer {
@@ -275,32 +325,17 @@
 }
 
 @media (max-width: 560px) {
-    .header {   
+    .header { 
+        padding-inline: 4%; 
   
-
-
         .header__logo {
-           
-
-
-    
-
-
-            
+                 
             .header__logo-burger {
                 display: block;
             }
         }
 
         .header__contakt {
-            justify-content: space-between;
-            &-phone {
-                margin-left: auto;
-                margin-right: 0;
-            }
-            .header__contak-adress {
-                margin-left: 100px;
-            }
 
             .dot img {
                 display: none;
@@ -308,15 +343,12 @@
             }    
         }
 
-        &__nav{
+        &__nav {
             display: none;
         }
 
-        &__contak{
+        &__contak {
   
-            gap: 0px;
-            justify-content: space-between;
-
             &-adress {
                 display: none;
             }
@@ -324,27 +356,10 @@
             &-facebook svg {
                 display: none;
             }
+
             &-phone {
                 margin-left: auto;
                 margin-right: 0;
-            }
-
-
-        }
-    }
-    .header {
-        padding-inline: 4%;
-
-        .header__contak{
-            justify-content: space-between;
-
-            &-facebook svg {
-                display: none;
-            }
-
-            .header__contak-adress {
-                display: none;
-                position: absolute;
             }
         }
     }
@@ -357,18 +372,19 @@
             overflow: hidden;
 
             .information-show {
+
                 &__item {
 
                     .item-text {
                         white-space:normal;
                     }
-                }
-                
+                }       
             }
         }
+
         .main__abaut-team {
             
-            .abaut-team__conteiner{
+            .abaut-team__conteiner {
                 margin-top: -65px;
                 h2 {
                     font-size: 40px;
@@ -376,16 +392,19 @@
                 }
             }
         }
+
         .main__abaut-quality {
             margin-top: -65px;
             padding-inline: 30px;
             padding-block: 30px;
             overflow: hidden;
         }
+
         .main__abaut-information {
             padding-inline: 30px;
             padding-block: 30px;
         }
+
         .main__abaut-achievements {
             .achievements__layout {
                 &-img{
@@ -399,16 +418,14 @@
                 }
             }
 
-            .current__imitation{
+            .current__imitation {
                 a {
                     .no__aktiv{
                         position: static;
                         display: block;
                     }
                 }
-            }
-    
-
+            }  
         }
     }
 
@@ -434,18 +451,37 @@
                         aspect-ratio: 3/3;
                     }
                 }
-            }
-
-            
-
+            }      
         }
     }
- 
-
-
+    .main__team-page {
+        padding-block: 30px;
+        .team-page__conteiner {
+            .team-page__conteiner-foto {
+                min-width: 0;
+            }
+        }
+    }
     
     .footer{
         padding-inline: 2%;
+        
+        .footer__conteiner {
+            .footer__conteiner-email {
+                white-space: normal;
+            }
+
+            .footer__conteiner-company {
+                white-space: normal;
+            }
+
+            .footer__conteiner-contakt {
+                .footer__conteiner-adres {
+                    white-space: normal;
+
+                }
+            }
+        }
     }
 }
 
