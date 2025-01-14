@@ -31,7 +31,13 @@
                 max-height: 420px;
             }
         }
-    }       
+    }
+    
+    .publications__page {
+        .publications__page-conteiner {
+            padding-inline: 60px;
+        }
+    }
     
 
 
@@ -176,6 +182,24 @@
     .main__publications {
         padding-inline: 5%;
     }
+
+    .publications__page {
+        .publications__page-conteiner {
+            padding-inline: 5%;
+        }
+        .publications__page-recommended {
+            a .recommended__link {
+                padding-inline: 5%;
+            }
+            .recommended__title {
+                padding-inline: 5%;
+            }
+            .recommended__conteiner {
+                padding-inline: 5%;
+            }
+        }
+    }
+    
 }
 
 
@@ -216,6 +240,24 @@
             }
             
 
+        }
+    }
+
+    .publications__page {
+        .publications__page-recommended {
+            .recommended__conteiner {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 2px;
+                grid-template-areas:
+                        "publications-conteiner-1 publications-conteiner-2"
+                        "publications-conteiner-3 publications-conteiner-3"
+                        "publications-conteiner-line publications-conteiner-line";
+                
+                .publications-conteiner-3 {
+                    max-width: 100%;
+                }       
+            }
         }
     }
 
@@ -324,6 +366,20 @@
                     "publications-conteiner-5 publications-conteiner-6"
                     "publications-conteiner-button publications-conteiner-button"
                     "publications-conteiner-line publications-conteiner-line";
+        }
+    }
+
+    .publications__page {
+        .publications__page-conteiner {
+            .publications__page-conteiner-informacion {
+                .informacion__illustration {
+                    padding-inline: 4px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
         }
     }
 
@@ -504,7 +560,31 @@
                     "publications-conteiner-line";
         }
     }
-    
+
+    .publications__page {
+        .publications__page-conteiner {
+            padding-block: 30px;
+            .publications__page-conteiner-img {
+                height: 300px;
+            }
+        }
+        .publications__page-recommended {
+            .recommended__conteiner {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 2px;
+                grid-template-areas:
+                        "publications-conteiner-1"
+                        "publications-conteiner-2"
+                        "publications-conteiner-3"
+                        "publications-conteiner-line";
+                
+     
+            }
+        }
+    }
+
+
     .footer{
         padding-inline: 2%;
         
